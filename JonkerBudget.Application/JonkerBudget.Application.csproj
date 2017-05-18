@@ -122,6 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dto\Ad_Users\Dto\AdUsers.cs" />
+    <Compile Include="Dto\Categories\Dto\In\CreateCategoryDtoIn.cs" />
+    <Compile Include="Dto\Categories\Dto\Out\CategoryDtoOut.cs" />
+    <Compile Include="Dto\Expenses\Dto\In\CreateExpenseTestDtoIn.cs" />
+    <Compile Include="Dto\Expenses\Dto\In\CreateExpenseDtoIn.cs" />
+    <Compile Include="Dto\Expenses\Dto\Out\ExpenseDtoOut.cs" />
     <Compile Include="Dto\NotificationTasks\Dto\In\NotificationTaskDtoIn.cs" />
     <Compile Include="Dto\EscalationDetails\Dto\Out\EscalationDetailDtoOut.cs" />
     <Compile Include="Dto\NotificationTasks\Dto\Out\NotificationTaskDtoOut.cs" />
@@ -139,6 +144,10 @@
     <Compile Include="ApplicationMappingProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Dto\Users\Dto\UserDto.cs" />
+    <Compile Include="Services\Categories\CategoryApplicationService.cs" />
+    <Compile Include="Services\Categories\ICategoryApplicationService.cs" />
+    <Compile Include="Services\Expenses\IExpenseApplicationService.cs" />
+    <Compile Include="Services\Expenses\ExpenseApplicationService.cs" />
     <Compile Include="Services\TaskNotifications\INotificationTaskApplicationService.cs" />
     <Compile Include="Services\TaskNotifications\NotificationTaskApplicationService.cs" />
     <Compile Include="Services\TaskNotificationUpdates\ITaskNotificationUpdateApplicationService.cs" />

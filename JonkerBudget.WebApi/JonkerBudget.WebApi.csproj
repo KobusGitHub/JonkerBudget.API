@@ -273,7 +273,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Base\ControllerBase.cs" />
     <Compile Include="Controllers\Base\NoContent.cs" />
+    <Compile Include="Controllers\ExpenseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\NotificationTaskController.cs" />
     <Compile Include="Controllers\NotificationTaskUpdateController.cs" />
     <Compile Include="Controllers\UserManagerController.cs" />

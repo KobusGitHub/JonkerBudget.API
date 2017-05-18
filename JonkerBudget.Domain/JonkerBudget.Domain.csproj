@@ -156,6 +156,8 @@
     <Compile Include="Services\Categories\ICategoryService.cs" />
     <Compile Include="Services\EscalationDetails\IEscalationDetailService.cs" />
     <Compile Include="Services\EscalationDetails\EscalationDetailService.cs" />
+    <Compile Include="Services\Expenses\ExpenseService.cs" />
+    <Compile Include="Services\Expenses\IExpenseService.cs" />
     <Compile Include="Services\NotificationTasks\INotificationTaskService.cs" />
     <Compile Include="Services\NotificationTasks\NotificationTaskService.cs" />
     <Compile Include="Services\NotificationTaskUpdates\INotificationTaskUpdateService.cs" />
@@ -169,9 +171,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\Expenses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
