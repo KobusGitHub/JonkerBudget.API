@@ -12,12 +12,18 @@ namespace JonkerBudget.EntityFramework
     using System.Data.Entity.Infrastructure.Annotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using Domain.Entities;
+
+
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class DataContext : IdentityDbContext<User, Role, string, UserLogin, UserRole, UserClaim>
     {
-        public DataContext()
-            : base("name=DataContextConnectionString")
-        {
-        }
+        public DataContext() : this("MyDB") { }
+        public DataContext(string connStringName) : base("name=DataContextConnectionString") { }
+
+        //public DataContext()
+        //    : base("name=DataContextConnectionString")
+        //{
+        //}
         public static DataContext Create()
         {
             return new DataContext();
@@ -27,6 +33,10 @@ namespace JonkerBudget.EntityFramework
         public virtual DbSet<EscalationDetail> EscalationDetails { get; set; }
         public virtual DbSet<NotificationTask> NotificationTasks { get; set; }
         public virtual DbSet<NotificationTaskUpdate> NotificationTaskUpdates { get; set; }
+
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Expense> Expense { get; set; }
+
         public virtual DbSet<Status> Statuses { get; set; }
 
         public virtual DbSet<Auditing.Audit> Audits { get; set; }

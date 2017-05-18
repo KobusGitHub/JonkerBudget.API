@@ -95,6 +95,14 @@
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.ConnectorNET.Data.6.8.3.2\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.ConnectorNET.Entity.6.8.3.2\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -120,6 +128,14 @@
     <Compile Include="Auditing\AuditDetail.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DataContextExecutionStrategy.cs" />
+    <Compile Include="Migrations\201705181459287_Inital.cs" />
+    <Compile Include="Migrations\201705181459287_Inital.Designer.cs">
+      <DependentUpon>201705181459287_Inital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705181513002_Added_Expense_And_Category.cs" />
+    <Compile Include="Migrations\201705181513002_Added_Expense_And_Category.Designer.cs">
+      <DependentUpon>201705181513002_Added_Expense_And_Category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\DbContextProvider.cs" />
@@ -138,6 +154,14 @@
       <Project>{eb4d1df5-dee9-4ab5-b867-afa81bddf299}</Project>
       <Name>JonkerBudget.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705181459287_Inital.resx">
+      <DependentUpon>201705181459287_Inital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705181513002_Added_Expense_And_Category.resx">
+      <DependentUpon>201705181513002_Added_Expense_And_Category.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

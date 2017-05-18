@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using JonkerBudget.Domain.Entities;
 using JonkerBudget.Domain.Identity;
+using JonkerBudget.Domain.Models.Categories;
 using JonkerBudget.Domain.Models.EscalationDetails;
+using JonkerBudget.Domain.Models.Expenses;
 using JonkerBudget.Domain.Models.NotificationTasks;
 using JonkerBudget.Domain.Models.NotificationTaskUpdates;
 using JonkerBudget.Domain.Models.Statuses;
@@ -24,6 +26,10 @@ namespace JonkerBudget.Domain
             CreateMap<Status, StatusModel>().ReverseMap();
             CreateMap<EscalationDetail, EscalationDetailModel>().ReverseMap();
             CreateMap<EscalationDetail, EscalationDetailModelOut>().ReverseMap();
+
+            CreateMap<Category, CategoryModel>().ReverseMap();
+            CreateMap<Expense, ExpenseModel>().ReverseMap();
+
         }
     }
 }
