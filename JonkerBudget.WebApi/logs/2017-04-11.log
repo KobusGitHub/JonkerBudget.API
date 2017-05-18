@@ -1,0 +1,76 @@
+2017-04-11 07:51:46.6151 INFO (Method:GET)(Url:http://localhost:6567/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 08:04:34.1502 INFO (Method:GET)(Url:http://localhost:6567/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 09:37:01.6008 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:37:09.4206 ERROR Api Exception - Anonymous - d870b44f-8f9b-416c-89b9-b51fe462f1d5
+2017-04-11 09:39:38.6418 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:39:44.0852 ERROR Api Exception - Anonymous - 7bcc0627-433a-4a71-bea2-d5e0f17b0bb2
+2017-04-11 09:42:16.8153 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:42:41.3039 ERROR Api Exception - Anonymous - 3cc921c6-6a92-42da-95a4-4238a7c169fd
+2017-04-11 09:43:15.4373 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:43:40.8781 ERROR Api Exception - Anonymous - ee225cc0-a10a-4100-8fd4-30d7aa164c77
+2017-04-11 09:44:35.2530 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:45:42.5303 ERROR Api Exception - Anonymous - fee19964-53fc-4478-9ed4-50e91423d060
+2017-04-11 09:52:59.5772 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:57:16.6940 ERROR Api Exception - Anonymous - a1a70d87-6168-4bfe-847b-79a37e0a0a59
+2017-04-11 09:57:31.5990 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:57:50.9940 ERROR Api Exception - Anonymous - 702b4815-618d-465e-adae-81ff8b7bf3f0
+2017-04-11 09:58:22.0025 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 09:58:32.6813 ERROR Api Exception - Anonymous - a76b12b4-b613-4ff2-ba68-24b988e8c0e7
+2017-04-11 10:01:00.9063 INFO (Method:GET)(Url:http://localhost:6567/)(Body:)(Username:Anonymous)
+2017-04-11 10:01:13.6832 ERROR Api Exception - Anonymous - 5792e75f-1441-4259-b951-741134889da1
+2017-04-11 10:01:31.8143 INFO (Method:GET)(Url:http://localhost:6567/)(Body:)(Username:Anonymous)
+2017-04-11 10:04:42.6238 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 10:04:53.8347 ERROR Api Exception - Anonymous - 66650329-c289-4256-8435-83c4888ae3da
+2017-04-11 10:09:38.0756 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 10:10:22.4101 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 10:31:09.8845 INFO (Method:POST)(Url:http://localhost/SGNotify.WebApi/api/Account/Register)(Body:{
+  "email": "kobus.jonker@sgits.co.za",
+  "password": "Kobu$1",
+  "confirmPassword": "Kobu$1"
+})(Username:Anonymous)
+2017-04-11 10:35:55.0200 INFO (Method:POST)(Url:http://localhost/SGNotify.WebApi/api/Account/Register)(Body:{
+	"userName": "kobus.jonker@sgits.co.za",
+    "email": "kobus.jonker@sgits.co.za",
+    "firstName": "Kobus",
+    "surname": "Jonker",
+    "isAdUser": false,
+    "password": "Kobu$1",
+	"confirmPassword": "Kobu$1"
+   
+})(Username:Anonymous)
+2017-04-11 10:42:47.5921 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 10:44:52.5275 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 11:49:28.4470 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 11:49:31.7683 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/)(Body:)(Username:Anonymous)
+2017-04-11 11:49:31.7683 INFO (Method:PUT)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:{"id":"73b4888c-03ed-4f0e-b583-d8ca81330db0","firstName":"Kobus","surname":"Jonker","email":"kobus.jonker@sgits.co.za","username":"kobus.jonker@sgits.co.za","isAdUser":"true"})(Username:Anonymous)
+2017-04-11 11:58:25.0282 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users?Id=73b4888c-03ed-4f0e-b583-d8ca81330db0)(Body:)(Username:Anonymous)
+2017-04-11 11:58:25.3932 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users?Id=73b4888c-03ed-4f0e-b583-d8ca81330db0)(Body:)(Username:Anonymous)
+2017-04-11 11:58:25.4632 INFO Service:UsersServiceMethod:GetUserAsyncParameters:73b4888c-03ed-4f0e-b583-d8ca81330db0TimeStampUtc:2017/04/11 09:58:25 AMUsername:AnonymousRequestId:SGNotify.WebApi.Request.RequestInfo
+2017-04-11 12:03:38.2062 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:03:38.2582 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:13:03.5486 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:13:03.5876 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:13:07.9831 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users?Id=2152d630-2a04-40bc-8ab3-764aae1cc988)(Body:)(Username:Anonymous)
+2017-04-11 12:13:08.0121 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users?Id=2152d630-2a04-40bc-8ab3-764aae1cc988)(Body:)(Username:Anonymous)
+2017-04-11 12:13:08.0131 INFO Service:UsersServiceMethod:GetUserAsyncParameters:2152d630-2a04-40bc-8ab3-764aae1cc988TimeStampUtc:2017/04/11 10:13:08 AMUsername:AnonymousRequestId:SGNotify.WebApi.Request.RequestInfo
+2017-04-11 12:13:38.5111 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users?Id=2152d630-2a04-40bc-8ab3-764aae1cc988)(Body:)(Username:Anonymous)
+2017-04-11 12:13:38.6031 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users?Id=2152d630-2a04-40bc-8ab3-764aae1cc988)(Body:)(Username:Anonymous)
+2017-04-11 12:13:38.6031 INFO Service:UsersServiceMethod:GetUserAsyncParameters:2152d630-2a04-40bc-8ab3-764aae1cc988TimeStampUtc:2017/04/11 10:13:38 AMUsername:AnonymousRequestId:SGNotify.WebApi.Request.RequestInfo
+2017-04-11 12:13:41.1094 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:13:41.1474 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:23:53.4877 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 12:23:53.7967 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 13:01:40.9792 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 13:01:41.3832 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 13:10:01.6102 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 13:10:01.8152 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 14:08:06.9110 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 14:08:07.1930 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/Users)(Body:)(Username:Anonymous)
+2017-04-11 14:18:08.8010 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 14:18:08.9300 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 14:18:49.0510 INFO (Method:OPTIONS)(Url:http://10.200.84.134/SGNotify.WebApi/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 14:18:49.1920 INFO (Method:GET)(Url:http://10.200.84.134/SGNotify.WebApi/api/NotificationTasks/GetNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-11 15:35:11.8280 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/api/Users?inputName=henry.oforeh)(Body:)(Username:Anonymous)
+2017-04-11 15:48:25.0090 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/api/Users?inputName=henry.oforeh)(Body:)(Username:Anonymous)
+2017-04-11 15:50:38.1350 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/api/Users?inputName=henry.oforeh)(Body:)(Username:Anonymous)
+2017-04-11 15:50:50.9210 INFO (Method:GET)(Url:http://localhost/SGNotify.WebApi/api/Users?inputName=henry.oforeh)(Body:)(Username:Anonymous)

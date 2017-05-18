@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CommsApi.Client.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CommsApi.Client.CommsApi">
+            <summary>
+            Comms Api Client
+            </summary>
+        </member>
+        <member name="M:CommsApi.Client.CommsApi.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Create instance of Comms Api Client
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.CommsApi.EmailApi">
+            <summary>
+            Access the CommsApi EmailApi
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.CommsApi.SmsApi">
+            <summary>
+            Access the Comms Api SmsApi
+            </summary>
+        </member>
+        <member name="M:CommsApi.Client.CommsApi.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.Email">
+            <summary>
+            Comms Api Email Class
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.Id">
+            <summary>
+            Comms Api Email Id
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.Body">
+            <summary>
+            Comms Api Email Body
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.IsHtml">
+            <summary>
+            Comms Api Email IsBody Html
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.Subject">
+            <summary>
+            Comms Api Email Subject
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.From">
+            <summary>
+            Comms Api Email Subject
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.AttachmentIds">
+            <summary>
+            List Of Email Attachment Ids
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Email.AttachmentNames">
+            <summary>
+            List Of Email Attachment Names
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.Attachment">
+            <summary>
+            CommsApi Email Attachment
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Attachment.FileName">
+            <summary>
+            Comms Api Email Attachment FileName
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.Attachment.FileData">
+            <summary>
+            Comms Api Email Attachment FileData
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.ReadEmailsOptions">
+            <summary>
+            Read Emails Options
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.ReadEmailsOptions.Mailbox">
+            <summary>
+            Name of Mailbox to read
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.ReadEmailsOptions.SearchString">
+            <summary>
+            SearchString query
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.ReadEmailsOptions.PageSize">
+            <summary>
+            PageSize for data to be returned
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.ReadEmailsOptions.OffSet">
+            <summary>
+            Offet for paging data
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.SendEmail">
+            <summary>
+            Send Email
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.From">
+            <summary>
+            The semi-colon separated From address
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.To">
+            <summary>
+            The semi-colon separated To address
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.Cc">
+            <summary>
+            The semi-colon separated Cc address
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.Bcc">
+            <summary>
+            The semi-colon separated Bcc address
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.IsBodyHtml">
+            <summary>
+            Specifies if the body of the email Html
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.Subject">
+            <summary>
+            The subject of the email
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmail.Body">
+            <summary>
+            The body of the email
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.SendEmailBasic">
+            <summary>
+            Send basic email
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmailBasic.FileName">
+            <summary>
+            Basic email FileName
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmailBasic.FileData">
+            <summary>
+            Basic email FileData
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.SendEmailResult">
+            <summary>
+            Send email result
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmailResult.Success">
+            <summary>
+            Is email sent success
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmailResult.Message">
+            <summary>
+            Reponse message
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmailResult.RequestId">
+            <summary>
+            The Server-Side generated request id
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Classes.SendEmailStream">
+            <summary>
+            Send email with attachments as stream
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.EmailComms.Classes.SendEmailStream.Attachments">
+            <summary>
+            Attachments to be streamed
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.EmailComms.Api.IEmailApi">
+            <summary>
+            CommsApi EmailApi Interface
+            </summary>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.SendEmailAsStreamAsync(CommsApi.Client.EmailComms.Classes.SendEmailStream)">
+            <summary>
+            Send an email via a stream to the Comms Api
+            </summary>
+            <param name="email">Attachments to stream to the Comms Api</param>
+            <returns>Returns result with information about the request</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.SendEmailBasicAsync(CommsApi.Client.EmailComms.Classes.SendEmailBasic)">
+            <summary>
+            Send an email via basic object to the Comms Api
+            Single attachment limited to 4mb
+            </summary>
+            <param name="email">Basic attachment to send to the Comms Api</param>
+            <returns>Returns result with information about the request</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.QueueEmailAsStreamAsync(CommsApi.Client.EmailComms.Classes.SendEmailStream)">
+            <summary>
+            Queue an email via a stream to the Comms Api
+            </summary>
+            <param name="email">Attachments to stream to the Comms Api</param>
+            <returns>Returns result with information about the request</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.QueueEmailBasicAsync(CommsApi.Client.EmailComms.Classes.SendEmailBasic)">
+            <summary>
+            Queue an email via basic object to the Comms Api
+            Single attachment limited to 4mb
+            </summary>
+            <param name="email">Basic attachment to send to the Comms Api</param>
+            <returns>Returns result with information about the request</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.ReadEmailsAsync(System.String)">
+            <summary>
+            Read emails for a given mailbox that the Api user has access to.
+            </summary>
+            <param name="mailbox">The name of the mailbox to read all emails</param>
+            <returns>A list of the emails</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.ReadEmailsAsync(System.String,System.String)">
+            <summary>
+            Get emails based on Mailbox and SearchString
+            </summary>
+            <param name="mailbox"></param>
+            <param name="searchString"></param>
+            <returns>Emails based on Mailbox and SearchString</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.ReadEmailsAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            Get emails based on Mailbox and pages the emails as required
+            </summary>
+            <param name="mailbox"></param>
+            <param name="pageSize"></param>
+            <param name="offset"></param>
+            <returns>Emails based on Mailbox and pages the emails as required</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.ReadEmailsAsync(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get emails based on Mailbox and SearchString, and pages the emails as required
+            </summary>
+            <param name="mailbox"></param>
+            <param name="searchString"></param>
+            <param name="pageSize"></param>
+            <param name="offset"></param>
+            <returns>Emails based on Mailbox and SearchString, and pages the emails as required</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.DownloadAttachment(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Download a specific attachment based on mailId and attachmentId
+            </summary>
+            <param name="mailbox"></param>
+            <param name="mailId"></param>
+            <param name="attachmentId"></param>
+            <param name="fileName"></param>
+            <param name="locationToSave"></param>
+            <returns>Saves file to specified location and name</returns>
+        </member>
+        <member name="M:CommsApi.Client.EmailComms.Api.IEmailApi.MoveEmail(System.String,System.String[],System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Move an email to another folder
+            </summary>
+            <param name="mailbox"></param>
+            <param name="mailIds"></param>
+            <param name="markAsRead"></param>
+            <param name="destinationFolder"></param>
+            <param name="createFolder"></param>
+            <returns>Return bool which is result of move</returns>
+        </member>
+        <member name="T:CommsApi.Client.Api.SmsComms.Api.ISmsApi">
+            <summary>
+            Sms Api
+            </summary>
+        </member>
+        <member name="M:CommsApi.Client.Api.SmsComms.Api.ISmsApi.SendSmsAsync(CommsApi.Client.Api.SmsComms.Classes.SendSms)">
+            <summary>
+            Send sms
+            </summary>
+            <param name="smsToSend"></param>
+        </member>
+        <member name="M:CommsApi.Client.Api.SmsComms.Api.ISmsApi.ValidateMobileNumberAsync(System.String)">
+            <summary>
+            Validate a mobile number
+            </summary>
+            <param name="mobileNumber"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="T:CommsApi.Client.Api.SmsComms.Classes.SendSms">
+            <summary>
+            Send Sms Class
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.Api.SmsComms.Classes.SendSms.MobileNumber">
+            <summary>
+            Mobile number to send to
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.Api.SmsComms.Classes.SendSms.Message">
+            <summary>
+            Message to send with sms
+            </summary>
+        </member>
+        <member name="T:CommsApi.Client.Api.SmsComms.Classes.SendSmsResult">
+            <summary>
+            Result after sending sms
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.Api.SmsComms.Classes.SendSmsResult.Success">
+            <summary>
+            Send sms result
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.Api.SmsComms.Classes.SendSmsResult.Message">
+            <summary>
+            Message to send
+            </summary>
+        </member>
+        <member name="P:CommsApi.Client.Api.SmsComms.Classes.SendSmsResult.RequestId">
+            <summary>
+            Request Id issued by the comms api
+            </summary>
+        </member>
+    </members>
+</doc>

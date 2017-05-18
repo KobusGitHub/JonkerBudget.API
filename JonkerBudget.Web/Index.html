@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html ng-app="app">
+<head>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-local-storage.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controller.js"></script>
+    <script src="app/dataService.js"></script>
+    <script src="app/authInterceptorService.js"></script>
+    <script src="app/authService.js"></script>
+    <style>
+        div {
+            border: 1px black solid;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="Ctrl as vm">
+        <div>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Username:</label>
+                        </td>
+                        <td>
+                            <input id="username" type="text" ng-model="username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input id="password" type="password" ng-model="password" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <br />
+            <button ng-click="login()">Login</button>
+            <button ng-click="logout()">Logout</button>
+        </div>
+        <div>
+            <button ng-click="getData()">Get Data</button>
+            <table>
+                <tr ng-repeat="dataRow in vm.data track by dataRow.id">
+                    <td>
+                        {{dataRow.name}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

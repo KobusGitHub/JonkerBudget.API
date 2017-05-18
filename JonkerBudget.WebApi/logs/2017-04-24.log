@@ -1,0 +1,51 @@
+2017-04-24 10:20:58.3041 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:01:45.8568 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=41)(Body:)(Username:Anonymous)
+2017-04-24 13:01:48.5769 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=41)(Body:)(Username:Anonymous)
+2017-04-24 13:02:38.7944 INFO (Method:POST)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/CreateNotificationTaskStatusUpdate)(Body:{
+  "notificationTaskId": 41,
+  "statusId": 5
+})(Username:Anonymous)
+2017-04-24 13:02:40.0107 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=41)(Body:)(Username:Anonymous)
+2017-04-24 13:02:40.6296 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=41)(Body:)(Username:Anonymous)
+2017-04-24 13:02:43.5662 INFO (Method:POST)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/CreateNotificationTaskStatusUpdate)(Body:{
+  "notificationTaskId": 41,
+  "statusId": 6
+})(Username:Anonymous)
+2017-04-24 13:02:44.1813 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=41)(Body:)(Username:Anonymous)
+2017-04-24 13:02:44.7802 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=41)(Body:)(Username:Anonymous)
+2017-04-24 13:02:47.6823 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:02:55.5286 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=38)(Body:)(Username:Anonymous)
+2017-04-24 13:02:56.1383 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=38)(Body:)(Username:Anonymous)
+2017-04-24 13:03:56.2080 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:04:27.4477 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=38)(Body:)(Username:Anonymous)
+2017-04-24 13:04:28.0956 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=38)(Body:)(Username:Anonymous)
+2017-04-24 13:04:34.4432 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=40)(Body:)(Username:Anonymous)
+2017-04-24 13:04:35.0962 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=40)(Body:)(Username:Anonymous)
+2017-04-24 13:05:36.0734 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=42)(Body:)(Username:Anonymous)
+2017-04-24 13:05:36.7281 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=42)(Body:)(Username:Anonymous)
+2017-04-24 13:05:44.1181 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:05:47.5690 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=42)(Body:)(Username:Anonymous)
+2017-04-24 13:05:48.1761 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=42)(Body:)(Username:Anonymous)
+2017-04-24 13:05:49.2537 INFO (Method:POST)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/CreateNotificationTaskStatusUpdate)(Body:{
+  "notificationTaskId": 42,
+  "statusId": 5
+})(Username:Anonymous)
+2017-04-24 13:05:49.8808 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:05:50.1358 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=42)(Body:)(Username:Anonymous)
+2017-04-24 13:05:50.7318 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=42)(Body:)(Username:Anonymous)
+2017-04-24 13:06:08.1030 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:06:12.1767 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=42)(Body:)(Username:Anonymous)
+2017-04-24 13:06:12.8223 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=42)(Body:)(Username:Anonymous)
+2017-04-24 13:06:25.9019 INFO (Method:POST)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/CreateNotificationTaskUpdate)(Body:{
+  "notificationTaskId": 42,
+  "comment": "Screw you"
+})(Username:Anonymous)
+2017-04-24 13:06:36.3137 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=42)(Body:)(Username:Anonymous)
+2017-04-24 13:06:36.9297 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=42)(Body:)(Username:Anonymous)
+2017-04-24 13:06:39.1754 INFO (Method:POST)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/CreateNotificationTaskStatusUpdate)(Body:{
+  "notificationTaskId": 42,
+  "statusId": 6
+})(Username:Anonymous)
+2017-04-24 13:06:39.8779 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetOpenNotificationTasks)(Body:)(Username:Anonymous)
+2017-04-24 13:06:40.3099 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTasks/GetNotificationTask?id=42)(Body:)(Username:Anonymous)
+2017-04-24 13:06:40.8965 INFO (Method:GET)(Url:http://10.200.86.85/SGNotify.WebApi/api/NotificationTaskUpdates/GetNotificationTaskUpdates?notificationTaskId=42)(Body:)(Username:Anonymous)

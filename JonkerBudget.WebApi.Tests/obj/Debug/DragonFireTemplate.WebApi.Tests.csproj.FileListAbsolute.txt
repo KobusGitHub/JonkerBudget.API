@@ -1,0 +1,6 @@
+C:\Git\SGNotify-Web\DragonFireTemplate.WebApi.Tests\bin\Debug\SGNotify.WebApi.Tests.dll
+C:\Git\SGNotify-Web\DragonFireTemplate.WebApi.Tests\bin\Debug\SGNotify.WebApi.Tests.pdb
+C:\Git\SGNotify-Web\DragonFireTemplate.WebApi.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Git\SGNotify-Web\DragonFireTemplate.WebApi.Tests\obj\Debug\DragonFireTemplate.WebApi.Tests.csprojResolveAssemblyReference.cache
+C:\Git\SGNotify-Web\DragonFireTemplate.WebApi.Tests\obj\Debug\SGNotify.WebApi.Tests.dll
+C:\Git\SGNotify-Web\DragonFireTemplate.WebApi.Tests\obj\Debug\SGNotify.WebApi.Tests.pdb

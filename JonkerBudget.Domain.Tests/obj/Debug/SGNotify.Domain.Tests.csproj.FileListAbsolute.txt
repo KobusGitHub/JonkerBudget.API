@@ -1,0 +1,16 @@
+C:\Git\SGNotify-Web\DragonFireTemplate.Domain.Tests\bin\Debug\SGNotify.Domain.Tests.dll
+C:\Git\SGNotify-Web\DragonFireTemplate.Domain.Tests\bin\Debug\SGNotify.Domain.Tests.pdb
+C:\Git\SGNotify-Web\DragonFireTemplate.Domain.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Git\SGNotify-Web\DragonFireTemplate.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.dll
+C:\Git\SGNotify-Web\DragonFireTemplate.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.pdb
+C:\Git\SGNotify-Web\SGNotify.Domain.Tests\bin\Debug\SGNotify.Domain.Tests.dll
+C:\Git\SGNotify-Web\SGNotify.Domain.Tests\bin\Debug\SGNotify.Domain.Tests.pdb
+C:\Git\SGNotify-Web\SGNotify.Domain.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Git\SGNotify-Web\SGNotify.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.csprojResolveAssemblyReference.cache
+C:\Git\SGNotify-Web\SGNotify.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.dll
+C:\Git\SGNotify-Web\SGNotify.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.pdb
+C:\Git\SGNotify.API\SGNotify.Domain.Tests\bin\Debug\SGNotify.Domain.Tests.dll
+C:\Git\SGNotify.API\SGNotify.Domain.Tests\bin\Debug\SGNotify.Domain.Tests.pdb
+C:\Git\SGNotify.API\SGNotify.Domain.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Git\SGNotify.API\SGNotify.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.dll
+C:\Git\SGNotify.API\SGNotify.Domain.Tests\obj\Debug\SGNotify.Domain.Tests.pdb

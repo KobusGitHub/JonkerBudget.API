@@ -1,0 +1,126 @@
+﻿<div class="jumbotron df-black-back df-margin-top-50">
+    <h1 class="text-center df-white-font">Dragon Fire</h1>
+    <div class="text-center">
+        <img src="~/Content/DragonFire.png" />
+    </div>
+    <div style="color:white !important">
+        <table class="table layers-table">
+            <thead>
+                <tr>
+                    <th colspan="2"><h3 class="text-center df-white-font">Layers</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="layer-name col-sm-3">
+                        Web
+                    </td>
+                    <td class="layer-building-blocks col-sm-10">
+                        <span>View Models (Javascript), Views (HTML/CSS), Localization</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="layer-name">
+                        Web Api
+                    </td>
+                    <td class="layer-building-blocks">
+                        <span>Web API Controllers, MVC Controllers, Localization</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="layer-name">
+                        Application
+                    </td>
+                    <td class="layer-building-blocks">
+                        <span>Application Services, DTOs, DTO Mappers</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="layer-name">
+                        Domain
+                    </td>
+                    <td class="layer-building-blocks">
+                        <span>Entities, Value Objects, Repositories, Business Classes, Domain Services, Unit of Work, Domain Events</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="layer-name">
+                        Entity Framework
+                    </td>
+                    <td class="layer-building-blocks">
+                        <span>ORM, DB Migrations, Filters</span>
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h3 class="text-center df-white-font">Others</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="layer-name">
+                        Core
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="layer-building-blocks">
+                        <span>Dependency Injection Using Autofac</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="layer-building-blocks">
+                        <span>Mapping Using Automapper</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="layer-building-blocks">
+                        <span>Global Exception Handling And Logging For Web Api</span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="layer-name">
+                        Workers
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="layer-building-blocks">
+                        <span>Worker Api</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            The differences between a domain service and an application services are subtle but critical:
+            • Domain services are very granular where as application services are a facade purposed with providing an API.
+            • Domain services contain domain logic that can’t naturally be placed in an entity or value object whereas application services orchestrate the execution of domain logic and don’t themselves implement any domain logic.
+            • Domain service methods can have other domain elements as operands and return values whereas application services operate upon trivial operands such as identity values and primitive data structures.
+            • Application services declare dependencies on infrastructural services required to execute domain logic.
+            • Command handlers are a flavor of application services which focus on handling a single command typically in a CQRS architecture.
+        </div>
+        <div>
+            1. Distinguish Model and View Model. Entities should always be valid.
+            There should be no method able to put it in an invalid state.
+            Oh! you just set its properties in the form? This is not DDD.
+            This is CRUD with Anemic Domain Model.
+            View Model can be validated using validation attributes and any other nice way.
+            You should return the list of broken validation rules rather than throw exceptions.
+
+            2. Distinguish Validation Rules and Business Rules.
+            This first are context-free, can be checked on client side, they are about the form(at) (data making sense) rather than content (command can be processed).
+            Business rules should be checked in entities methods that are the only way of changing their state.
+            So you provide valid arguments to the method and it decides if they are also acceptable.
+            If not, the exception is one of the ways of communicating it.
+            But you can also consider alternatives, like domain events.
+        </div>
+    </div>
+</div>
+
