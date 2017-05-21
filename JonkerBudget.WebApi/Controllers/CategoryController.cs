@@ -86,5 +86,30 @@ namespace JonkerBudget.WebApi.Controllers
 
             return Ok(category);
         }
+
+        [HttpPost]
+        [Route("AddCategories")]
+        public async Task<IHttpActionResult> AddCategories([FromBody]List<CreateCategoryDtoIn> createCategorytDtoInList)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            //task.CreatedBy = HttpContext.Current.User.Identity.GetUserId();
+            try
+            {
+                await categoryService.AddCategories(createCategorytDtoInList);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+
+
+
+            return Ok();
+        }
+
     }
 }

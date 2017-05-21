@@ -12,6 +12,7 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
     {
         Task<IEnumerable<CategoryModel>> GetAllCategories();
         Task<CategoryModel> AddCategory(CategoryModel categoryModel);
-        
+        Task AddCategories(List<CategoryModel> categoryModels);
+
     }
 }

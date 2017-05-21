@@ -43,9 +43,9 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
             return mapper.Map<List<ExpenseModel>>(expenses); ;
         }
 
-        public async Task<ExpenseModel> AddExpense(ExpenseModel categoryModel)
+        public async Task<ExpenseModel> AddExpense(ExpenseModel expenseModel)
         {
-            var expense = await this.expenseRepository.InsertAsync(mapper.Map<Expense>(categoryModel));
+            var expense = await this.expenseRepository.InsertAsync(mapper.Map<Expense>(expenseModel));
             await unitOfWork.SaveChangesAsync();
 
             var returnModel = mapper.Map<ExpenseModel>(expense);
@@ -53,11 +53,11 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
             return returnModel;
         }
 
-        public async Task AddExpenses(List<ExpenseModel> categoryModels)
+        public async Task AddExpenses(List<ExpenseModel> expenseModels)
         {
-            foreach (var categoryModel in categoryModels)
+            foreach (var expenseModel in expenseModels)
             {
-                await this.expenseRepository.InsertAsync(mapper.Map<Expense>(categoryModel));
+                await this.expenseRepository.InsertAsync(mapper.Map<Expense>(expenseModel));
             }
             await unitOfWork.SaveChangesAsync();
         }

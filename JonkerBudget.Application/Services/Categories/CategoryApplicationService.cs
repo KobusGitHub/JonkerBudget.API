@@ -37,6 +37,12 @@ namespace JonkerBudget.Application.Services.TaskNotifications
             var dto = this.mapper.Map<CategoryDtoOut>(task);
             return dto;
         }
+        public async Task AddCategories(List<CreateCategoryDtoIn> createCategoryDtoInList)
+        {
+
+            var models = this.mapper.Map< List<CategoryModel>> (createCategoryDtoInList);
+            await categoryService.AddCategories(models);
+        }
 
         public async Task<IEnumerable<CategoryDtoOut>> GetAllCategories()
         {

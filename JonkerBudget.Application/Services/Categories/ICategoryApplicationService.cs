@@ -13,5 +13,7 @@ namespace JonkerBudget.Application.Services.TaskNotifications
     {
         Task<IEnumerable<CategoryDtoOut>> GetAllCategories();
         Task<CategoryDtoOut> AddCategory(CreateCategoryDtoIn createCategoryDtoIn);
+        Task AddCategories(List<CreateCategoryDtoIn> createCategoryDtoInList);
+
     }
 }

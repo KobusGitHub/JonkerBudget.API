@@ -13,7 +13,7 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
     {
         Task<IEnumerable<ExpenseModel>> GetAllExpenses();
         Task<ExpenseModel> AddExpense(ExpenseModel expenseModel);
-        Task AddExpenses(List<ExpenseModel> categoryModels);
+        Task AddExpenses(List<ExpenseModel> expenseModels);
 
 
     }

@@ -339,6 +339,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Properties\PublishProfiles\JonkerBudget.pubxml" />
     <None Include="Properties\PublishProfiles\new publish.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -420,7 +421,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6567</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/SGNotify.WebApi</IISUrl>
+          <IISUrl>http://localhost/JonkerBudget.WebApi</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -51,5 +51,14 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
 
             return returnModel;
         }
+
+        public async Task AddCategories(List<CategoryModel> categoryModels)
+        {
+            foreach (var categoryModel in categoryModels)
+            {
+                await this.categoryRepository.InsertAsync(mapper.Map<Category>(categoryModel));
+            }
+            await unitOfWork.SaveChangesAsync();
+        }
     }
 }
