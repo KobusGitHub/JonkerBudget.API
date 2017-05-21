@@ -11,6 +11,7 @@ namespace JonkerBudget.Domain.Entities
 {
     public class Category : BaseEntity
     {
+        public Guid GuidId { get; set; }
         public string CategoryName { get; set; }
         public double Budget { get; set; }
     }

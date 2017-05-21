@@ -11,10 +11,7 @@ namespace JonkerBudget.Domain.Entities
 {
     public class Expense : BaseEntity
     {
-        public int CategoryId { get; set; }
-
-        [ForeignKey("CategoryId")]
-        public Category Category { get; set; }
+        public Guid CategoryGuidId { get; set; }
 
         public double ExpenseValue { get; set; }
 

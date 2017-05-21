@@ -10,10 +10,7 @@ namespace JonkerBudget.Application.Dto.Expenses.Dto.Out
     public class ExpenseDtoOut
     {
         public int Id { get; set; }
-        public int CategoryId { get; set; }
-
-        public CategoryDtoOut Category { get; set; }
-
+        public Guid CategoryGuidId { get; set; }
         public double ExpenseValue { get; set; }
 
         public int Year { get; set; }

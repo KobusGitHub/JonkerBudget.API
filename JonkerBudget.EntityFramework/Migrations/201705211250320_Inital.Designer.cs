@@ -13,7 +13,7 @@ namespace JonkerBudget.EntityFramework.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201705181459287_Inital"; }
+            get { return "201705211250320_Inital"; }
         }
         
         string IMigrationMetadata.Source

@@ -86,4 +86,3 @@ C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.Enti
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.pdb
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.Migrations.Inital.resources
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.csproj.GenerateResource.Cache
-C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.Migrations.Added_Expense_And_Category.resources

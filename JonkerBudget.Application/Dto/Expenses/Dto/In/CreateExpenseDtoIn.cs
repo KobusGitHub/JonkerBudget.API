@@ -8,7 +8,7 @@ namespace JonkerBudget.Application.Dto.Expenses.Dto.In
 {
     public class CreateExpenseDtoIn
     {
-        public int CategoryId { get; set; }
+        public Guid CategoryGuidId { get; set; }
 
         public double ExpenseValue { get; set; }
 

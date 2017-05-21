@@ -39,7 +39,7 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
 
         public async Task<IEnumerable<ExpenseModel>> GetAllExpenses()
         {
-            var expenses = await this.expenseRepository.FindWith(n => n.Category).ToListAsync();
+            var expenses = await this.expenseRepository.GetAll().ToListAsync();
             return mapper.Map<List<ExpenseModel>>(expenses); ;
         }
 

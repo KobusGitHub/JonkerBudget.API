@@ -38,6 +38,25 @@ namespace JonkerBudget.EntityFramework.Migrations
                 .Index(t => t.ObjectId);
             
             CreateTable(
+                "dbo.Category",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        GuidId = c.Guid(nullable: false),
+                        CategoryName = c.String(unicode: false),
+                        Budget = c.Double(nullable: false),
+                        DateCreatedUtc = c.DateTime(nullable: false, precision: 0),
+                        DateUpdatedUtc = c.DateTime(nullable: false, precision: 0),
+                        IsActive = c.Boolean(nullable: false),
+                        IsDeleted = c.Boolean(nullable: false),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.EscalationDetail",
                 c => new
                     {
@@ -194,6 +213,28 @@ namespace JonkerBudget.EntityFramework.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.Expense",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        CategoryGuidId = c.Guid(nullable: false),
+                        ExpenseValue = c.Double(nullable: false),
+                        Year = c.Int(nullable: false),
+                        Month = c.String(unicode: false),
+                        RecordDate = c.DateTime(precision: 0),
+                        expenseCode = c.String(unicode: false),
+                        DateCreatedUtc = c.DateTime(nullable: false, precision: 0),
+                        DateUpdatedUtc = c.DateTime(nullable: false, precision: 0),
+                        IsActive = c.Boolean(nullable: false),
+                        IsDeleted = c.Boolean(nullable: false),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.Role",
                 c => new
                     {
@@ -264,6 +305,11 @@ namespace JonkerBudget.EntityFramework.Migrations
                     { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },
                 });
             DropTable("dbo.Role");
+            DropTable("dbo.Expense",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },
+                });
             DropTable("dbo.Status",
                 removedAnnotations: new Dictionary<string, object>
                 {
@@ -284,6 +330,11 @@ namespace JonkerBudget.EntityFramework.Migrations
                     { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },
                 });
             DropTable("dbo.EscalationDetail",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },
+                });
+            DropTable("dbo.Category",
                 removedAnnotations: new Dictionary<string, object>
                 {
                     { "globalFilter_IsDeleted", "EntityFramework.Filters.FilterDefinition" },

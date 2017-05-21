@@ -10,9 +10,7 @@ namespace JonkerBudget.Domain.Models.Expenses
     public class ExpenseModel
     {
         public int Id { get; set; }
-        public int CategoryId { get; set; }
-
-        public CategoryModel Category { get; set; }
+        public Guid CategoryGuidId { get; set; }
 
         public double ExpenseValue { get; set; }
 
