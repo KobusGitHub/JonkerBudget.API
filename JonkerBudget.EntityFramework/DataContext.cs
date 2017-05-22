@@ -30,14 +30,8 @@ namespace JonkerBudget.EntityFramework
         }
 
         public virtual DbSet<UserManager> UserManagers { get; set; }
-        public virtual DbSet<EscalationDetail> EscalationDetails { get; set; }
-        public virtual DbSet<NotificationTask> NotificationTasks { get; set; }
-        public virtual DbSet<NotificationTaskUpdate> NotificationTaskUpdates { get; set; }
-
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Expense> Expense { get; set; }
-
-        public virtual DbSet<Status> Statuses { get; set; }
 
         public virtual DbSet<Auditing.Audit> Audits { get; set; }
         public virtual DbSet<AuditDetail> AuditDetails { get; set; }

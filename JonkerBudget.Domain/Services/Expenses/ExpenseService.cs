@@ -3,19 +3,10 @@ using DragonFire.Core.EntityFramework.Uow;
 using DragonFire.Core.Repository;
 using DragonFire.Core.Request;
 using JonkerBudget.Domain.Entities;
-using JonkerBudget.Domain.Models.Categories;
-using JonkerBudget.Domain.Models.EscalationDetails;
 using JonkerBudget.Domain.Models.Expenses;
-using JonkerBudget.Domain.Models.NotificationTasks;
-using JonkerBudget.Domain.Models.NotificationTaskUpdates;
 using JonkerBudget.Domain.Services.Base;
-using JonkerBudget.Domain.Services.NotificationTasks;
-using JonkerBudget.Domain.Services.NotificationTaskUpdates;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JonkerBudget.Domain.Services.EscalationDetails

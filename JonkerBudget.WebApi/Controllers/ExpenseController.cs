@@ -1,17 +1,10 @@
 ﻿using AutoMapper;
 using DragonFire.Core.Request;
-using Microsoft.AspNet.Identity;
-using JonkerBudget.Application.Dto.NotificationTasks.Dto.Out;
 using JonkerBudget.Application.Services.TaskNotifications;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Http;
-using JonkerBudget.Domain.Services.EscalationDetails;
-using JonkerBudget.Application.Dto.Categories.Dto.Out;
-using JonkerBudget.Application.Dto.Categories.Dto.In;
 using JonkerBudget.Application.Dto.Expenses.Dto.In;
 using JonkerBudget.Application.Dto.Expenses.Dto.Out;
 

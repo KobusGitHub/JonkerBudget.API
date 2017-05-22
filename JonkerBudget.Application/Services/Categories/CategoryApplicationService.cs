@@ -2,16 +2,10 @@
 using DragonFire.Core.Request;
 using JonkerBudget.Application.Dto.Categories.Dto.In;
 using JonkerBudget.Application.Dto.Categories.Dto.Out;
-using JonkerBudget.Application.Dto.NotificationTasks.Dto.Out;
 using JonkerBudget.Application.Services.Base;
 using JonkerBudget.Domain.Models.Categories;
-using JonkerBudget.Domain.Models.NotificationTasks;
 using JonkerBudget.Domain.Services.EscalationDetails;
-using JonkerBudget.Domain.Services.NotificationTasks;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JonkerBudget.Application.Services.TaskNotifications
@@ -37,6 +31,15 @@ namespace JonkerBudget.Application.Services.TaskNotifications
             var dto = this.mapper.Map<CategoryDtoOut>(task);
             return dto;
         }
+
+        public async Task<CategoryDtoOut> UpdateCategory(CreateCategoryDtoIn createCategoryDtoIn)
+        {
+            var model = this.mapper.Map<CategoryModel>(createCategoryDtoIn);
+            var task = await categoryService.UpdateCategory(model);
+            var dto = this.mapper.Map<CategoryDtoOut>(task);
+            return dto;
+        }
+
         public async Task AddCategories(List<CreateCategoryDtoIn> createCategoryDtoInList)
         {
 

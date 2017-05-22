@@ -4,17 +4,11 @@ using DragonFire.Core.Repository;
 using DragonFire.Core.Request;
 using JonkerBudget.Domain.Entities;
 using JonkerBudget.Domain.Models.Categories;
-using JonkerBudget.Domain.Models.EscalationDetails;
-using JonkerBudget.Domain.Models.NotificationTasks;
-using JonkerBudget.Domain.Models.NotificationTaskUpdates;
 using JonkerBudget.Domain.Services.Base;
-using JonkerBudget.Domain.Services.NotificationTasks;
-using JonkerBudget.Domain.Services.NotificationTaskUpdates;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JonkerBudget.Domain.Services.EscalationDetails
@@ -42,6 +36,20 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
             return mapper.Map<List<CategoryModel>>(categories); ;
         }
 
+        public async Task<CategoryModel> UpdateCategory(CategoryModel categoryModel)
+        {
+            var categories = await this.categoryRepository.GetAll().ToListAsync();
+
+            var category = categories.FirstOrDefault(x => x.GuidId == categoryModel.GuidId);
+
+            category.Budget = categoryModel.Budget;
+            category.CategoryName = categoryModel.CategoryName;
+            category.DateUpdatedUtc = DateTime.Now;
+
+            await unitOfWork.SaveChangesAsync();
+            return mapper.Map<CategoryModel>(category);
+        }
+
         public async Task<CategoryModel> AddCategory(CategoryModel categoryModel)
         {
             var category = await this.categoryRepository.InsertAsync(mapper.Map<Category>(categoryModel));
@@ -54,9 +62,22 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
 
         public async Task AddCategories(List<CategoryModel> categoryModels)
         {
+            var categories = await this.categoryRepository.GetAll().ToListAsync();
+
+
             foreach (var categoryModel in categoryModels)
             {
-                await this.categoryRepository.InsertAsync(mapper.Map<Category>(categoryModel));
+                var category = categories.FirstOrDefault(x => x.GuidId == categoryModel.GuidId);
+                if (category != null)
+                {
+                    category.Budget = categoryModel.Budget;
+                    category.CategoryName = categoryModel.CategoryName;
+                    category.DateUpdatedUtc = DateTime.Now;
+                }
+                else
+                {
+                    await this.categoryRepository.InsertAsync(mapper.Map<Category>(categoryModel));
+                }
             }
             await unitOfWork.SaveChangesAsync();
         }

@@ -128,9 +128,9 @@
     <Compile Include="Auditing\AuditDetail.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DataContextExecutionStrategy.cs" />
-    <Compile Include="Migrations\201705211250320_Inital.cs" />
-    <Compile Include="Migrations\201705211250320_Inital.Designer.cs">
-      <DependentUpon>201705211250320_Inital.cs</DependentUpon>
+    <Compile Include="Migrations\201705221644012_Initial.cs" />
+    <Compile Include="Migrations\201705221644012_Initial.Designer.cs">
+      <DependentUpon>201705221644012_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,8 +152,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705211250320_Inital.resx">
-      <DependentUpon>201705211250320_Inital.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705221644012_Initial.resx">
+      <DependentUpon>201705221644012_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

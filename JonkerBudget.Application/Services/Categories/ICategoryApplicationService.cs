@@ -1,10 +1,6 @@
 ﻿using JonkerBudget.Application.Dto.Categories.Dto.In;
 using JonkerBudget.Application.Dto.Categories.Dto.Out;
-using JonkerBudget.Application.Dto.NotificationTasks.Dto.Out;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JonkerBudget.Application.Services.TaskNotifications
@@ -13,6 +9,7 @@ namespace JonkerBudget.Application.Services.TaskNotifications
     {
         Task<IEnumerable<CategoryDtoOut>> GetAllCategories();
         Task<CategoryDtoOut> AddCategory(CreateCategoryDtoIn createCategoryDtoIn);
+        Task<CategoryDtoOut> UpdateCategory(CreateCategoryDtoIn createCategoryDtoIn);
         Task AddCategories(List<CreateCategoryDtoIn> createCategoryDtoInList);
 
     }

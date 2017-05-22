@@ -2,16 +2,10 @@
 using DragonFire.Core.Request;
 using JonkerBudget.Application.Dto.Expenses.Dto.In;
 using JonkerBudget.Application.Dto.Expenses.Dto.Out;
-using JonkerBudget.Application.Dto.NotificationTasks.Dto.Out;
 using JonkerBudget.Application.Services.Base;
 using JonkerBudget.Domain.Models.Expenses;
-using JonkerBudget.Domain.Models.NotificationTasks;
 using JonkerBudget.Domain.Services.EscalationDetails;
-using JonkerBudget.Domain.Services.NotificationTasks;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JonkerBudget.Application.Services.TaskNotifications

@@ -172,7 +172,6 @@
     <Compile Include="AutoMapperProfiles\DefaultProfile.cs" />
     <Compile Include="Controllers\Base\ControllerBase.cs" />
     <Compile Include="Controllers\Base\NoContent.cs" />
-    <Compile Include="Controllers\EscalationsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global\GeneralErrorResult.cs" />
     <Compile Include="Global\GlobalExceptionHandler.cs" />
