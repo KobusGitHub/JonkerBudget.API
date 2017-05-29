@@ -113,7 +113,6 @@ C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebAp
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.dll
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.pdb
-C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\roslyn\csc.exe
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -228,5 +227,6 @@ C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\Microsoft.Owin.Security.Google.x
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\System.Web.Http.Owin.xml
+C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.pdb

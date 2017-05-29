@@ -7,6 +7,7 @@ using JonkerBudget.Domain.Models.Expenses;
 using JonkerBudget.Domain.Services.Base;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace JonkerBudget.Domain.Services.EscalationDetails
@@ -33,6 +34,14 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
             var expenses = await this.expenseRepository.GetAll().ToListAsync();
             return mapper.Map<List<ExpenseModel>>(expenses); ;
         }
+
+        public async Task<IEnumerable<ExpenseModel>> GetMonthExpenses(int year, string month)
+        {
+            var expenses = await this.expenseRepository.GetAll().ToListAsync();
+            return mapper.Map<List<ExpenseModel>>(expenses.Where(x => x.Year == year && x.Month == month));
+        }
+
+        
 
         public async Task<ExpenseModel> AddExpense(ExpenseModel expenseModel)
         {

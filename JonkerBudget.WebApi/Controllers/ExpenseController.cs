@@ -53,7 +53,34 @@ namespace JonkerBudget.WebApi.Controllers
             return Ok(categories);
         }
 
-       
+        [HttpGet]
+        [Route("GetMonthExpenses")]
+        public async Task<IHttpActionResult> GetMonthExpenses(int year, string month)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            IEnumerable<ExpenseDtoOut> categories = new List<ExpenseDtoOut>();
+            try
+            {
+                categories = await expenseService.GetMonthExpenses(year, month);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+
+            if (categories == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(categories);
+        }
+
+
         [HttpPost]
         [Route("AddExpense")]
         public async Task<IHttpActionResult> AddExpense([FromBody]CreateExpenseDtoIn createExpenseDtoIn)

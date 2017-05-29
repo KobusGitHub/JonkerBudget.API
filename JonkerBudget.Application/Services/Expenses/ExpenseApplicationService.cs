@@ -48,5 +48,15 @@ namespace JonkerBudget.Application.Services.TaskNotifications
             return dtos;
         }
 
+        public async Task<IEnumerable<ExpenseDtoOut>> GetMonthExpenses(int year, string month)
+        {
+            //var currentUserId = requestInfoProvider.Current.UserId;
+            var expenseModels = await expenseService.GetMonthExpenses(year, month);
+            var dtos = this.mapper.Map<IEnumerable<ExpenseDtoOut>>(expenseModels);
+
+            return dtos;
+        }
+       
+
     }
 }

@@ -7,6 +7,7 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
     public interface IExpenseService
     {
         Task<IEnumerable<ExpenseModel>> GetAllExpenses();
+        Task<IEnumerable<ExpenseModel>> GetMonthExpenses(int year, string month);
         Task<ExpenseModel> AddExpense(ExpenseModel expenseModel);
         Task AddExpenses(List<ExpenseModel> expenseModels);
 

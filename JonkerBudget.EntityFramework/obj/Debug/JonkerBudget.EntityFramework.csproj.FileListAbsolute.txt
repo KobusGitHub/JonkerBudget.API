@@ -40,7 +40,6 @@ C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.Entit
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.csprojResolveAssemblyReference.cache
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.dll
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.pdb
-C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\JonkerBudget.EntityFramework.dll.config
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\JonkerBudget.EntityFramework.dll
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\JonkerBudget.EntityFramework.pdb
@@ -82,7 +81,6 @@ C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\Microsoft.Owin.Se
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\Newtonsoft.Json.xml
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\AutoMapper.xml
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\bin\Debug\NLog.xml
+C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.dll
 C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.pdb
-C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.Migrations.Initial.resources
-C:\Git\JonkerBudget.API\JonkerBudget.EntityFramework\obj\Debug\JonkerBudget.EntityFramework.csproj.GenerateResource.Cache

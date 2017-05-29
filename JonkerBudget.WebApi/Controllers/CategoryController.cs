@@ -42,7 +42,7 @@ namespace JonkerBudget.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
             if (categories == null)
@@ -53,7 +53,27 @@ namespace JonkerBudget.WebApi.Controllers
             return Ok(categories);
         }
 
-       
+        [HttpGet]
+        [Route("GetTestData")]
+        public async Task<IHttpActionResult> GetTestData()
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            List<CategoryDtoOut> categories = new List<CategoryDtoOut>();
+            categories.Add(new CategoryDtoOut { Id = 1, Budget = 99.99, CategoryName = "TestCategoryName", GuidId = Guid.NewGuid() });
+
+            if (categories == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(categories);
+        }
+
+
         [HttpPost]
         [Route("AddCategory")]
         public async Task<IHttpActionResult> AddCategory([FromBody]CreateCategoryDtoIn createCategoryDtoIn)

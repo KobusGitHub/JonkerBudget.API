@@ -96,7 +96,6 @@ C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\DragonFire.Interce
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.csprojResolveAssemblyReference.cache
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.dll
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.pdb
-C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\DragonFire.Intercept.dll.config
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\DragonFire.Intercept.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\DragonFire.Intercept.pdb
@@ -129,5 +128,6 @@ C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.Owin.xml
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\EntityFramework.xml
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.pdb
