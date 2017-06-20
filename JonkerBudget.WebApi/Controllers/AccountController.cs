@@ -368,9 +368,10 @@ namespace JonkerBudget.WebApi.Controllers
 
             await UserManager.AddToRoleAsync(user.Id, model.Role);
 
-            //Send email to user after successful creation
-            return await SendEmailToUserAsync(user, model.Password);
-            //return Ok(user);
+            return Ok(user);
+            ////Send email to user after successful creation
+            //return await SendEmailToUserAsync(user, model.Password);
+            ////return Ok(user);
         }
 
         private async Task<IHttpActionResult> SendEmailToUserAsync(User user,string password)
