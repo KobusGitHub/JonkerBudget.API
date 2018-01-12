@@ -31,13 +31,13 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
 
         public async Task<IEnumerable<ExpenseModel>> GetAllExpenses()
         {
-            var expenses = await this.expenseRepository.GetAll().ToListAsync();
+            var expenses = await this.expenseRepository.GetAllListAsync();
             return mapper.Map<List<ExpenseModel>>(expenses); ;
         }
 
         public async Task<IEnumerable<ExpenseModel>> GetMonthExpenses(int year, string month)
         {
-            var expenses = await this.expenseRepository.GetAll().ToListAsync();
+            var expenses = await this.expenseRepository.GetAllListAsync();
             return mapper.Map<List<ExpenseModel>>(expenses.Where(x => x.Year == year && x.Month == month));
         }
 

@@ -20,6 +20,8 @@ namespace JonkerBudget.Application.Dto.Expenses.Dto.In
         public string RecordDate { get; set; }
 
         public string expenseCode { get; set; }
+        public string Comment { get; set; }
+
 
         public bool inSync { get; set; }
     }

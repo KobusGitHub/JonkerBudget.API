@@ -19,5 +19,7 @@ namespace JonkerBudget.Application.Dto.Expenses.Dto.Out
         public DateTime? RecordDate { get; set; }
 
         public string expenseCode { get; set; }
+        public string Comment { get; set; }
+
     }
 }

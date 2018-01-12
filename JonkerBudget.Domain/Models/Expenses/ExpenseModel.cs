@@ -20,6 +20,7 @@ namespace JonkerBudget.Domain.Models.Expenses
         public DateTime? RecordDate { get; set; }
 
         public string expenseCode { get; set; }
+        public string Comment { get; set; }
 
     }
 }

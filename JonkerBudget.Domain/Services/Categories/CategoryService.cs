@@ -32,13 +32,13 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
 
         public async Task<IEnumerable<CategoryModel>> GetAllCategories()
         {
-            var categories = await this.categoryRepository.GetAll().ToListAsync();
+            var categories = await this.categoryRepository.GetAllListAsync();
             return mapper.Map<List<CategoryModel>>(categories); ;
         }
 
         public async Task<CategoryModel> UpdateCategory(CategoryModel categoryModel)
         {
-            var categories = await this.categoryRepository.GetAll().ToListAsync();
+            var categories = await this.categoryRepository.GetAllListAsync();
 
             var category = categories.FirstOrDefault(x => x.GuidId == categoryModel.GuidId);
 
@@ -62,7 +62,7 @@ namespace JonkerBudget.Domain.Services.EscalationDetails
 
         public async Task AddCategories(List<CategoryModel> categoryModels)
         {
-            var categories = await this.categoryRepository.GetAll().ToListAsync();
+            var categories = await this.categoryRepository.GetAllListAsync();
 
 
             foreach (var categoryModel in categoryModels)
