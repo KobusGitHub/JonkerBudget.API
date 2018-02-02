@@ -131,4 +131,3 @@ C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.AspNet.Identity
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.pdb
-C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Newtonsoft.Json.dll
