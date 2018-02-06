@@ -5,7 +5,7 @@ namespace JonkerBudget.EntityFramework.Migrations
     using System.Data.Entity.Infrastructure.Annotations;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
@@ -14,9 +14,9 @@ namespace JonkerBudget.EntityFramework.Migrations
                 c => new
                     {
                         Id = c.Long(nullable: false, identity: true),
-                        PropertyName = c.String(unicode: false),
-                        OldValue = c.String(unicode: false),
-                        NewValue = c.String(unicode: false),
+                        PropertyName = c.String(),
+                        OldValue = c.String(),
+                        NewValue = c.String(),
                         Audit_Id = c.Long(),
                     })
                 .PrimaryKey(t => t.Id)
@@ -28,10 +28,10 @@ namespace JonkerBudget.EntityFramework.Migrations
                 c => new
                     {
                         Id = c.Long(nullable: false, identity: true),
-                        Username = c.String(unicode: false),
-                        TimeStampUtc = c.DateTime(nullable: false, precision: 0),
-                        TableName = c.String(unicode: false),
-                        ObjectId = c.String(maxLength: 128, storeType: "nvarchar"),
+                        Username = c.String(),
+                        TimeStampUtc = c.DateTime(nullable: false),
+                        TableName = c.String(),
+                        ObjectId = c.String(maxLength: 128),
                         ActionId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
@@ -43,10 +43,10 @@ namespace JonkerBudget.EntityFramework.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         GuidId = c.Guid(nullable: false),
-                        CategoryName = c.String(unicode: false),
+                        CategoryName = c.String(),
                         Budget = c.Double(nullable: false),
-                        DateCreatedUtc = c.DateTime(nullable: false, precision: 0),
-                        DateUpdatedUtc = c.DateTime(nullable: false, precision: 0),
+                        DateCreatedUtc = c.DateTime(nullable: false),
+                        DateUpdatedUtc = c.DateTime(nullable: false),
                         IsActive = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
                     },
@@ -64,11 +64,12 @@ namespace JonkerBudget.EntityFramework.Migrations
                         CategoryGuidId = c.Guid(nullable: false),
                         ExpenseValue = c.Double(nullable: false),
                         Year = c.Int(nullable: false),
-                        Month = c.String(unicode: false),
-                        RecordDate = c.DateTime(precision: 0),
-                        expenseCode = c.String(unicode: false),
-                        DateCreatedUtc = c.DateTime(nullable: false, precision: 0),
-                        DateUpdatedUtc = c.DateTime(nullable: false, precision: 0),
+                        Month = c.String(),
+                        RecordDate = c.DateTime(),
+                        expenseCode = c.String(),
+                        Comment = c.String(),
+                        DateCreatedUtc = c.DateTime(nullable: false),
+                        DateUpdatedUtc = c.DateTime(nullable: false),
                         IsActive = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
                     },
@@ -82,8 +83,8 @@ namespace JonkerBudget.EntityFramework.Migrations
                 "dbo.Role",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
-                        Name = c.String(nullable: false, maxLength: 256, storeType: "nvarchar"),
+                        Id = c.String(nullable: false, maxLength: 128),
+                        Name = c.String(nullable: false, maxLength: 256),
                     })
                 .PrimaryKey(t => t.Id)
                 .Index(t => t.Name, unique: true, name: "RoleNameIndex");
@@ -92,8 +93,8 @@ namespace JonkerBudget.EntityFramework.Migrations
                 "dbo.UserRole",
                 c => new
                     {
-                        UserId = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
-                        RoleId = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
+                        UserId = c.String(nullable: false, maxLength: 128),
+                        RoleId = c.String(nullable: false, maxLength: 128),
                         Id = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => new { t.UserId, t.RoleId })
@@ -107,10 +108,10 @@ namespace JonkerBudget.EntityFramework.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        UserId = c.String(maxLength: 128, storeType: "nvarchar"),
-                        ManagerId = c.String(maxLength: 128, storeType: "nvarchar"),
-                        DateCreatedUtc = c.DateTime(nullable: false, precision: 0),
-                        DateUpdatedUtc = c.DateTime(nullable: false, precision: 0),
+                        UserId = c.String(maxLength: 128),
+                        ManagerId = c.String(maxLength: 128),
+                        DateCreatedUtc = c.DateTime(nullable: false),
+                        DateUpdatedUtc = c.DateTime(nullable: false),
                         IsActive = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
                     },
@@ -128,22 +129,22 @@ namespace JonkerBudget.EntityFramework.Migrations
                 "dbo.User",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
-                        FirstName = c.String(unicode: false),
-                        Surname = c.String(unicode: false),
+                        Id = c.String(nullable: false, maxLength: 128),
+                        FirstName = c.String(),
+                        Surname = c.String(),
                         IsAdUser = c.Boolean(nullable: false),
-                        PlayerId = c.String(unicode: false),
-                        Email = c.String(maxLength: 256, storeType: "nvarchar"),
+                        PlayerId = c.String(),
+                        Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
-                        PasswordHash = c.String(unicode: false),
-                        SecurityStamp = c.String(unicode: false),
-                        PhoneNumber = c.String(unicode: false),
+                        PasswordHash = c.String(),
+                        SecurityStamp = c.String(),
+                        PhoneNumber = c.String(),
                         PhoneNumberConfirmed = c.Boolean(nullable: false),
                         TwoFactorEnabled = c.Boolean(nullable: false),
-                        LockoutEndDateUtc = c.DateTime(precision: 0),
+                        LockoutEndDateUtc = c.DateTime(),
                         LockoutEnabled = c.Boolean(nullable: false),
                         AccessFailedCount = c.Int(nullable: false),
-                        UserName = c.String(nullable: false, maxLength: 256, storeType: "nvarchar"),
+                        UserName = c.String(nullable: false, maxLength: 256),
                     })
                 .PrimaryKey(t => t.Id)
                 .Index(t => t.UserName, unique: true, name: "UserNameIndex");
@@ -153,9 +154,9 @@ namespace JonkerBudget.EntityFramework.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        UserId = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
-                        ClaimType = c.String(unicode: false),
-                        ClaimValue = c.String(unicode: false),
+                        UserId = c.String(nullable: false, maxLength: 128),
+                        ClaimType = c.String(),
+                        ClaimValue = c.String(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.User", t => t.UserId)
@@ -165,9 +166,9 @@ namespace JonkerBudget.EntityFramework.Migrations
                 "dbo.UserLogin",
                 c => new
                     {
-                        LoginProvider = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
-                        ProviderKey = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
-                        UserId = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),
+                        LoginProvider = c.String(nullable: false, maxLength: 128),
+                        ProviderKey = c.String(nullable: false, maxLength: 128),
+                        UserId = c.String(nullable: false, maxLength: 128),
                         Id = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => new { t.LoginProvider, t.ProviderKey, t.UserId })

@@ -9,8 +9,7 @@ namespace JonkerBudget.EntityFramework.Migrations
     {
         public Configuration()
         {
-            //For local dev only, dont ever run this against a production database
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(JonkerBudget.EntityFramework.DataContext context)

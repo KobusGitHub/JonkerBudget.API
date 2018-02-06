@@ -112,8 +112,9 @@ C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.Owin.Security.d
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.Owin.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\DragonFire.Core.EntityFramework.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\EntityFramework.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Owin.dll
+C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Newtonsoft.Json.dll
+C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\EntityFramework.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\JonkerBudget.Application.pdb
 C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\JonkerBudget.Domain.pdb
@@ -131,4 +132,3 @@ C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Microsoft.AspNet.Identity
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.dll
 C:\Git\JonkerBudget.API\DragonFire.Intercept\obj\Debug\DragonFire.Intercept.pdb
-C:\Git\JonkerBudget.API\DragonFire.Intercept\bin\Debug\Newtonsoft.Json.dll

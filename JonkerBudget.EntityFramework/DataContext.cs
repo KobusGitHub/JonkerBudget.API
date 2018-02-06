@@ -14,11 +14,13 @@ namespace JonkerBudget.EntityFramework
     using Domain.Entities;
 
 
-    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+    //[DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class DataContext : IdentityDbContext<User, Role, string, UserLogin, UserRole, UserClaim>
     {
-        public DataContext() : this("MyDB") { }
-        public DataContext(string connStringName) : base("name=DataContextConnectionString") { }
+        //public DataContext() : this("MyDB") { }
+        //public DataContext(string connStringName) : base("name=DataContextConnectionString") { }
+        public DataContext() : base("name=DataContextConnectionString") { }
+
 
         //public DataContext()
         //    : base("name=DataContextConnectionString")

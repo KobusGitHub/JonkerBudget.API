@@ -113,6 +113,7 @@ C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebAp
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.dll
 C:\Users\kobus.jonker\Documents\private\Apps\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.pdb
+C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\roslyn\csc.exe
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -180,9 +181,7 @@ C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\System.Web.WebPages.Deployment.d
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\System.Web.WebPages.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\System.Web.WebPages.Razor.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\WebGrease.dll
-C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\MySql.Data.Entity.EF6.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\EntityFramework.Filters.dll
-C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\MySql.Data.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\DragonFire.Intercept.pdb
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\DragonFire.Module.pdb
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\JonkerBudget.Application.pdb
@@ -227,6 +226,5 @@ C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\Microsoft.Owin.Security.Google.x
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\bin\System.Web.Http.Owin.xml
-C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.csprojResolveAssemblyReference.cache
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.dll
 C:\Git\JonkerBudget.API\JonkerBudget.WebApi\obj\Debug\JonkerBudget.WebApi.pdb
